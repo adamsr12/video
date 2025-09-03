@@ -34,7 +34,6 @@
         font: 14pt/1.4em Georgia;
         width: 768px;
         margin: 24px auto;
-        padding-bottom: 175px;
     } img.float-left {
         width: 300px;
         float: left;
@@ -58,7 +57,28 @@
         text-decoration: none;
     } a li:hover {
         background: rgba(169,225,245,0.50);
+    } table {
+        font: 12pt/1.4em Roboto;
+        border-collapse: collapse;
+        margin: 48px auto;
+        border: 2px solid lightblue;
+    } tr:nth-child(2) {
+        font-style: italic;
+    } tr:nth-child(odd) {
+        background: gainsboro;
+    } td, th {
+        padding: 3px 6px;
+    } tr:nth-child(1) {
+        background: lightblue;
+    } h2 {
+        font: bold 14pt/1.4em Georgia, serif;
+        text-align: center;
+    } pre {
+        font: 12pt/1.0em monospace;
+        width: 768px;
+        margin: 6px auto;
     }
+
 </style>
 </head>
 
@@ -70,8 +90,44 @@
             <a href="video.html"><li>Balloon Federation of America</li></a>
         </ul>
         <h1>Hot Air Ballooning</h1>
-        <p><img class="float-left" src="andre.jpg" />
+        <p style="padding-bottom: 176px;"><img class="float-left" src="andre.jpg" />
             According to Wikipedia, the first balloon flight carrying passengers was by brothers Joseph-Michel and Jacques-Etienne Montgolfier in Annonay, France, in 1873. Since then many have enjoyed sightseeing from the quiet, nearly wind-free heights afforded by hot air ballooning. (Banner photo by Daniela Cuevas and small photo by Andre Frueh, both on Unsplash.)</p>
+        <h2>Colophon</h2>
+        <p>This index page and the linked video page (&ldquo;Balloon Federation of America,&rdquo; link above) show 4 types of links (table below) and how to place a video on a web page.</p>
+        <h2>Code for Video</h2>
+        <pre style="margin-top: 24px;">&lt;video width="640" height="360" controls poster="poster-natgeo-balloons.jpg"&gt;</pre>
+        <pre>&nbsp;&nbsp;&nbsp;&nbsp;source src="natgeo-balloons.mp4"&gt;</pre>
+        <pre>&lt;/video&gt;</pre>
+      <table> 
+      <tr>
+        <th colspan="3">Links</th>
+      </tr>
+      <tr>
+        <td>type</td>
+        <td>destination</td>
+        <td>comments</td>
+      </tr>
+      <tr>
+        <td>local/relative</td>
+        <td>link to another page on your server</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>global/absolute</td>
+        <td>link to a page on some else's server</td>
+        <td>link will get broken if owner changes the name</td>
+      </tr>
+      <tr>
+        <td>anchor</td>
+        <td>link to an ID for another location in a page</td>
+        <td>e.g., &ldquo;back to top&ldquo;</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>link to open an email to someone</td>
+        <td>can include subject and initial content</td>
+      </tr>
+    </table>
    </div>
 </body>
 </html>
